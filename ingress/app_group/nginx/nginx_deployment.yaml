@@ -18,13 +18,7 @@ spec:
         app: tags-deployment
     spec:
       containers:
-      - image: nginx:latest
-        name: nginx
-        volumeMounts:
-        - name: config-volume
-          mountPath: /usr/share/nginx/html/nginx/
-      volumes:
-      - name: config-volume
-        configMap:
-          name: nginx-configmap
+      - image: 109412806537.dkr.ecr.us-east-1.amazonaws.com/hik-test:latest
+        name: tags-deployment
+
 
