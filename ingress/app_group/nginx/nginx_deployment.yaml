@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: nginx-deployment
-  name: nginx-deployment
-  namespace: nginx
+    app: tags-deployment
+  name: tags-deployment
+  namespace: tags
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx-deployment
+      app: tags-deployment
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: nginx-deployment
+        app: tags-deployment
     spec:
       containers:
       - image: nginx:latest
